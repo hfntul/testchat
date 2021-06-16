@@ -106,7 +106,7 @@
                     <li class="nav-item"><a class="nav-link rounded" href="{{url('home')}}">Home</a></li>
                     <li class="nav-item"><a class="nav-link rounded" href="/rekam-medis/{{ Auth::user()->id }}">Rekam Medis</a></li>
                     <li class="nav-item"><a class="nav-link rounded" href="{{url('jadwal-dokter')}}">Jadwal Dokter</a></li>                   
-                    <li class="nav-item"><a class="nav-link rounded" href="{{url('konsultasi')}}">Konsultasi</a></li>
+                    <li class="nav-item"><a class="nav-link rounded" href="/chat/{{ Auth::user()->id}}">Konsultasi</a></li>
                     <!--
                     <buttton class="profile-name" type="button" data-toggle="modal" data-target="#contohModal">
                        <a href="#login">{{ Auth::user()->name }}</a>    

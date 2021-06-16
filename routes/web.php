@@ -101,6 +101,9 @@ Route::prefix('rekam-medis')->group(function(){
 });
 
 
+Route::get('/chat/{id}', 'ChatsController@chatshow');
+Route::get('messages', 'ChatsController@fetchMessages');
+Route::post('messages', 'ChatsController@sendMessage');
 
 
 

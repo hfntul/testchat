@@ -41,4 +41,9 @@ class User extends Authenticatable
         {
             return $table->hasMany('\App\RekamMedis');
         }
+
+        public function messages()
+        {
+          return $this->hasMany(Message::class);
+        }
 }
